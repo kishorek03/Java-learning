@@ -15,18 +15,13 @@ public class PetersonNumber {
         int sum = 0;
         while (temp > 0) {
             int result = temp % 10;
-            sum += PrimeNumber.Factorial.findFactorial(result);
-            temp/=10;
-
+            sum += Factorial.findFactorial(result);
+            temp /= 10;
         }
-        if (sum==inputNumber){
-            System.out.println("The given number is Peterson Number");}
-        else{
-            System.out.println("The given Number is Not a Peterson Number");
+        if (sum == inputNumber) {
+            System.out.println("The given number is a Peterson Number");
+        } else {
+            System.out.println("The given number is not a Peterson Number");
         }
-
-
     }
-
 }
-
