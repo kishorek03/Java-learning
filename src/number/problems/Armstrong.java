@@ -1,5 +1,6 @@
-import java.lang.Math;
+package number.problems;
 
+import java.lang.Math;
 public class Armstrong {
     public static void main(String[] args) {
         int[] inputNumbers = ScannerHelper.getInputInts();
@@ -19,9 +20,9 @@ public class Armstrong {
             }
 
             if (result == inputNumber) {
-                System.out.println(inputNumber + " is an Armstrong number.");
+                System.out.println(inputNumber + " is an Number_Problems.Armstrong number.");
             } else {
-                System.out.println(inputNumber+ " is not an Armstrong number.");
+                System.out.println(inputNumber+ " is not an Number_Problems.Armstrong number.");
 
             }
         }

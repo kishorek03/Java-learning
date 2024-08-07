@@ -1,3 +1,5 @@
+package number.problems;
+
 import java.util.Scanner;
 
 public class ScannerHelper {

@@ -1,3 +1,5 @@
+import number.problems.ScannerHelper;
+
 public class TechNumber {
     public static void main(String[] args) {
         int [] inputNumbers = ScannerHelper.getInputInts();
@@ -12,9 +14,6 @@ public class TechNumber {
             count ++;
             input/=10;
         }
-        //if (input%2==0){
-
-       // }
 
     }
 }

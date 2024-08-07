@@ -1,3 +1,5 @@
+package number.problems;
+
 public class SunnyNumber {
     public static void main(String[] args) {
         int [] inputNumbers = ScannerHelper.getInputInts();

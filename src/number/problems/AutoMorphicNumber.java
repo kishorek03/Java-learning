@@ -1,3 +1,5 @@
+package number.problems;
+
 public class AutoMorphicNumber {
     public static void main(String[] args) {
         int[] inputNumbers = ScannerHelper.getInputInts();

@@ -12,7 +12,7 @@ public class RighttrianglePattern {
     public static void findRhsTriangle(int inputNumber) {
         for (int i = 0; i < inputNumber; i++) {
             for (int j = 0; j <= i; j++) {
-                System.out.print("* ");
+                System.out.print("*");
             }
             System.out.println();
         }

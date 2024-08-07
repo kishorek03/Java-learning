@@ -1,3 +1,5 @@
+package number.problems;
+
 public class PetersonNumber {
     public static void main(String[] args) {
         int[] inputNumbers = ScannerHelper.getInputInts();
@@ -11,7 +13,7 @@ public class PetersonNumber {
         int sum = 0;
         while (temp > 0) {
             int result = temp % 10;
-            sum +=Factorial.findFactorial(result);
+            sum += PrimeNumber.Factorial.findFactorial(result);
             temp/=10;
 
         }
