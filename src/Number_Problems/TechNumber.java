@@ -1,6 +1,6 @@
-package number.problems;
+package Number_Problems;
 
-import number.problems.ScannerHelper;
+import Helper.ScannerHelper;
 
 public class TechNumber {
     public static void main(String[] args) {

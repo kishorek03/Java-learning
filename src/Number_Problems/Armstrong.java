@@ -1,4 +1,6 @@
-package number.problems;
+package Number_Problems;
+
+import Helper.ScannerHelper;
 
 import java.lang.Math;
 public class Armstrong {

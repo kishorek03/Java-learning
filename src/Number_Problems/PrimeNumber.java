@@ -1,4 +1,6 @@
-package number.problems;
+package Number_Problems;
+
+import Helper.ScannerHelper;
 
 public class PrimeNumber {
     public static void main(String [] args) {
@@ -38,7 +40,7 @@ public class PrimeNumber {
             for (int j = 1; j <= inputNumber; j++) {
                 factorial *= j;
             }
-            System.out.println("number.problems.PrimeNumber.Factorial of " + inputNumber + ": " + factorial);
+            System.out.println("Number_Problems.PrimeNumber.Factorial of " + inputNumber + ": " + factorial);
             return factorial;
         }
     }

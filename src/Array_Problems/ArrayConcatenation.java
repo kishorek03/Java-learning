@@ -1,6 +1,6 @@
 package Array_Problems;
 
-import number.problems.ScannerHelper;
+import Helper.ScannerHelper;
 
 public class ArrayConcatenation {
     public static int[] concateArray(int[] nums) {

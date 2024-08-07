@@ -1,4 +1,6 @@
-package number.problems;
+package Number_Problems;
+
+import Helper.ScannerHelper;
 
 public class ReverseNumber {
     public static void main(String[] args) {
