@@ -1,3 +1,7 @@
+package Array_Problems;
+
+import number.problems.ScannerHelper;
+
 public class CountSortArray {
     public void sort(int a[], int n) {
         int count = 0;
@@ -21,7 +25,7 @@ public class CountSortArray {
 
     public static void main(String[] args) {
         CountSortArray C = new CountSortArray();
-        int[] array = {2, 1, 0, 1, 2, 0, 1};
+        int [] array = ScannerHelper.getInputInts();
         int n = array.length;
         C.sort(array, n);
         for (int i : array) {

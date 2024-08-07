@@ -1,3 +1,5 @@
+package Array_Problems;
+
 public class SortArray {
     public static void toSortArray(int[] arr) {
         boolean sorted = false;

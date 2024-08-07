@@ -1,3 +1,7 @@
+package Array_Problems;
+
+import number.problems.ScannerHelper;
+
 public class IndexPermutation {
     public static int[] buildArray(int[] nums){
         for (int i=0;i<nums.length;i++){
@@ -10,7 +14,7 @@ public class IndexPermutation {
     }
 
     public static void main(String[] args) {
-        int []nums={0,2,1,5,3,4};
+        int [] nums = ScannerHelper.getInputInts();
         int []result =buildArray(nums);
         for (Integer arr: result){
             System.out.print(arr+" ");

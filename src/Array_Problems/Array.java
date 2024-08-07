@@ -1,3 +1,5 @@
+package Array_Problems;
+
 public class Array {
     public static void reverseTriangle() {
         for (int i = 5; i >= 1; i--) {

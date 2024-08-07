@@ -1,3 +1,5 @@
+package number.problems;
+
 import number.problems.ScannerHelper;
 
 public class TechNumber {
