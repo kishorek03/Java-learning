@@ -1,5 +1,6 @@
 package Array_Problems;
 
+import Helper.PrintHelper;
 import Helper.ScannerHelper;
 
 public class ArrayConcatenation {
@@ -15,8 +16,7 @@ public class ArrayConcatenation {
     public static void main(String[] args) {
         int [] inputNumbers = ScannerHelper.getInputInts();
         int[] result = concateArray(inputNumbers);
-        for (int num : result) {
-            System.out.print(num + " ");
-        }
+        PrintHelper.printArray(result);
+        
     }
 }
