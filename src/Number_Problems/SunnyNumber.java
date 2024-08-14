@@ -15,7 +15,7 @@ public class SunnyNumber {
         if(Math.sqrt(n)%1==0){
             System.out.println("The given number is a sunny number");}
         else{
-            System.out.println("The given number is not a prime number");
+            System.out.println("The given number is not a sunny number");
         }
 
     }
