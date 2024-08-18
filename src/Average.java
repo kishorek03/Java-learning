@@ -1,14 +1,22 @@
 import java.util.Scanner;
-public class Average{
-	public static void main(String[] args){
-	Scanner in= new Scanner(System.in);
-	System.out.println("Enter the first no: ");
-	double a=in.nextDouble();
-	System.out.println("Enter the second no: ");
-	double b=in.nextDouble();
-	System.out.println("Enter the third no: ");
-	double c=in.nextDouble();
-	double Average=(a+b+c)/3;
-	System.out.println("Average of the given three numbers are : "+ Average);
-}
+import java.io.*;
+
+class fibonacci {
+
+	static int fib(int n){
+		int f[] = new int[n + 2];
+		f[0] = 0;
+		f[1] = 1;
+		for (int i = 2; i <= n; i++) {
+			f[i] = f[i - 1] + f[i - 2];
+		}
+		return f[n];
+	}
+
+	public static void main(String args[])
+	{
+		int N = 10;
+		for (int i = 0; i < N; i++)
+			System.out.print(fib(i) + " ");
+	}
 }

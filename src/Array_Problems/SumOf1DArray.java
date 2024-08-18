@@ -1,6 +1,6 @@
 package Array_Problems;
 
-import Helper.ScannerHelper;
+import Helper_Classes.ScannerHelper;
 
 public class SumOf1DArray {
     public static int[]runningSum(int[]nums){

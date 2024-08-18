@@ -2,7 +2,12 @@ import javax.xml.crypto.dsig.spec.XSLTTransformParameterSpec;
 import java.util.Scanner;
 
 public class Pyramidtriangle {
-    public static void main(String[] args) {
+    public static void main(String[] a) {
+        for (String i:a
+             ) {
+            System.out.println(i);
+
+        }
         int inputNumber = scanningNumber();
         findPyramidTriangle(inputNumber);
 

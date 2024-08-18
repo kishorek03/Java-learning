@@ -1,6 +1,6 @@
 package Number_Problems;
 
-import Helper.ScannerHelper;
+import Helper_Classes.ScannerHelper;
 
 import java.lang.Math;
 public class Armstrong {

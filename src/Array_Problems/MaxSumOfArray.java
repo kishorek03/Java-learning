@@ -1,12 +1,8 @@
 package Array_Problems;
 
-import Helper.PrintHelper;
-import Helper.ScannerHelper;
+import Helper_Classes.PrintHelper;
 
-import java.util.Scanner;
-
-import static Helper.ScannerHelper.*;
-import static Helper.PrintHelper.printArray;
+import static Helper_Classes.ScannerHelper.*;
 
 public class MaxSumOfArray {
     public static int maximumArray(int[][] nums) {

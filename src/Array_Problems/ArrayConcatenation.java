@@ -1,7 +1,7 @@
 package Array_Problems;
 
-import Helper.PrintHelper;
-import Helper.ScannerHelper;
+import Helper_Classes.PrintHelper;
+import Helper_Classes.ScannerHelper;
 
 public class ArrayConcatenation {
     public static int[] concateArray(int[] nums) {

@@ -1,6 +1,6 @@
 package Number_Problems;
 
-import Helper.ScannerHelper;
+import Helper_Classes.ScannerHelper;
 
 public class PrimeNumber {
     public static void main(String[] args) {

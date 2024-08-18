@@ -1,6 +1,6 @@
 package Array_Problems;
 
-import Helper.ScannerHelper;
+import Helper_Classes.ScannerHelper;
 
 public class CountSortArray {
     public void sort(int a[], int n) {
