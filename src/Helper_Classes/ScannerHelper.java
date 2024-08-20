@@ -28,8 +28,9 @@ public class ScannerHelper {
     public static int[] getRandomInts() {
         int[] randomNums = new int[10];
         for (int i = 0; i < 10; i++) {
-             randomNums[i]=(int)(Math.random()*10000);
+             randomNums[i]=(int)(Math.random()*10);
         }
+        PrintHelper.printArray(randomNums);
         return randomNums;
     }
     public static int[] getInputInts() {
