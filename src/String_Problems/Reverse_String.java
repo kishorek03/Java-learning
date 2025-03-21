@@ -12,10 +12,20 @@ public class Reverse_String {
             j--;
         }
     }
+    public static String reverse(String s){
+        char[] c=s.toCharArray();
+        StringBuilder reversestring=new StringBuilder();
+        for(int i=c.length-1;i>=0;i--){
+            reversestring.append(c[i]);
+
+        }
+        return reversestring.toString();
+
+
+    }
+
 
     public static void main(String[] args) {
-        char[] s = {'h', 'e', 'l', 'l', 'o'};
-        reverseString(s);
-        System.out.println(s);
+        System.out.println(reverse("sam"));
     }
 }

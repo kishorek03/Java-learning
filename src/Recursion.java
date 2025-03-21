@@ -1,13 +1,16 @@
 public class Recursion {
     public static void main(String[] args) {
-        print(1);
+        System.out.println(countZeros(50420));
     }
-    static void print(int n){
-        if (n==5){
-            System.out.println(n);
-            return;
-        }
-        System.out.println(n);
-        print(n+1);
+
+    static int countZeros(int n){
+        return helper(n,0);
     }
+    private static int helper(int n, int c) {
+        if (n == 0) return c;
+        int rem = n % 10;
+        return (rem == 0) ? helper(n / 10, c + 1) : helper(n / 10, c);
+
+    }
+
 }

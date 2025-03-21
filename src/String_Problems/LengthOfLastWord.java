@@ -5,8 +5,7 @@ public class LengthOfLastWord {
        s=s.trim();
        String[] str=s.split(" ");
        String lastword=str[str.length-1];
-       int length=lastword.length();
-       return length;
+        return lastword.length();
     }
 
     public static int lengthOfLastWord1(String s) {
@@ -14,7 +13,7 @@ public class LengthOfLastWord {
     }
     public static void main(String[] args) {
         String s="   fly me   to   the moon  ";
-        System.out.println(lengthOfLastWord1(s));
+        System.out.println(lengthOfLastWord(s));
     }
 
 }

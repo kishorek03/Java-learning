@@ -18,14 +18,12 @@ public class ThirdMaximumNumber {
             } else if (num < max2 && num > max3) {
                 max3 = num;
             }
-
         }
         if (max3 == Long.MIN_VALUE) {
             return (int) max1;
         }
         return (int)max3;
     }
-
     public static void main(String[] args) {
         int[] nums= ScannerHelper.getInputInts();
         int result =thirdMax(nums);

@@ -6,7 +6,7 @@ public class Factorial {
     public static void main(String[] args) {
         int[] inputNumbers = ScannerHelper.getInputInts();
         for (int i = 0; i < inputNumbers.length; i++) {
-            int result = findFactorial(inputNumbers[i]);
+            int result = recusiveFactorial(inputNumbers[i]);
             System.out.println("Factorial of " + inputNumbers[i] + ": " + result);
         }
     }
@@ -17,5 +17,13 @@ public class Factorial {
             factorial *= j;
         }
         return factorial;
+    }
+    public static int recusiveFactorial(int n){
+        if(n==1)
+            return 1;
+        else{
+            return n*recusiveFactorial(n-1);
+        }
+
     }
 }

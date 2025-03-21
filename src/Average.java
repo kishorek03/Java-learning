@@ -1,3 +1,4 @@
+import java.time.LocalDate;
 import java.util.Scanner;
 import java.io.*;
 
@@ -18,5 +19,7 @@ class fibonacci {
 		int N = 10;
 		for (int i = 0; i < N; i++)
 			System.out.print(fib(i) + " ");
+		LocalDate date= LocalDate.now();
+		System.out.println(date);
 	}
 }
