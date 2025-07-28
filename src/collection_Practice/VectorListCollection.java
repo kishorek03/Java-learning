@@ -10,7 +10,6 @@ public class VectorListCollection {
         vector.add("Apple");
         vector.add("Banana");
         vector.add("Pine Apple");
-
         String Fruit= vector.get(2);
 
         vector.remove(0);

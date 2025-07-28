@@ -15,6 +15,6 @@ public class StringLength {
     }
 
     public static void main(String[] args) {
-        System.out.println(stringLength("samritha"));
+        System.out.println(stringLength("sai"));
     }
 }

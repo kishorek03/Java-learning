@@ -36,7 +36,7 @@ public class BinarySearch {
     }
     static int recursiveBinarySearch(int arr[], int low, int high, int x)
     {
-        if (high >= low) {
+        if (low <= high) {
             int mid = low + (high - low) / 2;
             if (arr[mid] == x)
                 return mid;

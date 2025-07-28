@@ -2,8 +2,7 @@ package String_Problems;
 
 public class LengthOfLastWord {
     public static int lengthOfLastWord(String s) {
-       s=s.trim();
-       String[] str=s.split(" ");
+       String[] str=s.trim().split(" ");
        String lastword=str[str.length-1];
         return lastword.length();
     }

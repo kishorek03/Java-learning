@@ -1,7 +1,7 @@
 public class BinarySearching {
     public static void main(String[] args) {
         int[] arr={4,5,6,7,0,1,2};
-        System.out.println(rotatedBinarySearch(arr,0));;
+        System.out.println(rotatedBinarySearch(arr,1));
     }
 
     private static int rotatedBinarySearch(int[]nums,int target) {
@@ -9,14 +9,13 @@ public class BinarySearching {
         while (low <= high) {
             int mid = low + (high - low) / 2;
             if (nums[mid] == target) return mid;
-
-            if (nums[mid] >= nums[low]) { // Left half is sorted
+            if (nums[mid] >= nums[low]) {
                 if (target >= nums[low] && target < nums[mid]) {
                     high = mid - 1;
                 } else {
                     low = mid + 1;
                 }
-            } else { // Right half is sorted
+            } else {
                 if (target > nums[mid] && target <= nums[high]) {
                     low = mid + 1;
                 } else {
@@ -45,8 +44,8 @@ public class BinarySearching {
         while (low <= high) {
             int mid = low + (high - low) / 2;
             if (nums[mid] == target) {
-                result = mid; // Record the index
-                high = mid - 1; // Continue searching in the left half
+                result = mid;
+                high = mid - 1;
             } else if (nums[mid] < target) {
                 low = mid + 1;
             } else {
@@ -60,8 +59,8 @@ public class BinarySearching {
         while (low <= high) {
             int mid = low + (high - low) / 2;
             if (nums[mid] == target) {
-                result = mid; // Record the index
-                low = mid + 1; // Continue searching in the right half
+                result = mid;
+                low = mid + 1;
             } else if (nums[mid] < target) {
                 low = mid + 1;
             } else {

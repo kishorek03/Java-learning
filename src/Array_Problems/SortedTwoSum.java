@@ -31,6 +31,5 @@ public class SortedTwoSum {
         int target=s.nextInt();
         int[] arr=twoSum(numbers,target);
         PrintHelper.printArray(arr);
-
     }
 }

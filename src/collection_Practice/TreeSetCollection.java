@@ -13,7 +13,7 @@ public class TreeSetCollection {
         tree.add(43);
 
         for (Integer item:tree ){
-            System.out.println(item);
+            System.out.print(item+"->");
         }
     }
 }

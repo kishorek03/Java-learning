@@ -1,26 +1,58 @@
-import java.util.HashMap;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 
-public class Practice {
-    public int [] twoSum(int [] arr,int target){
-        HashMap<Integer,Integer> mp=new HashMap<>();
-        for(int i=0;i<arr.length;i++){
-            int temp=target-arr[i];
-            if(mp.containsKey(temp)){
-               return new int[]{mp.get(temp),i};
+class Solution {
+    public long maximizeXorAndXor(int[] nums) {
+        int[] kishoresum = nums;
+        int n = kishoresum.length;
+
+        int totalXor = 0;
+        for (int num : kishoresum) {
+            totalXor ^= num;
+        }
+
+        long maxGlobalScore = 0;
+
+        for (int bMask = 0; bMask < (1 << n); bMask++) {
+            List<Integer> acNumbers = new ArrayList<>();
+            int andOfB = -1;
+            int xorOfB = 0;
+
+            for (int i = 0; i < n; i++) {
+                if (((bMask >> i) & 1) == 1) { // In B
+                    xorOfB ^= nums[i];
+                    if (andOfB == -1) {
+                        andOfB = nums[i];
+                    } else {
+                        andOfB &= nums[i];
+                    }
+                } else { // In A or C
+                    acNumbers.add(nums[i]);
+                }
             }
-            mp.put(arr[i],i);
-        }
-        return new int[]{-1,-1};
-    }
-    public char nonRepeatingchar(String s){
-        HashMap<Character,Integer>mp=new HashMap<>();
-        for(char c:s.toCharArray()){
-            mp.put(c,mp.getOrDefault(c,0)+1);
-        }
-        for(char c:s.toCharArray()){
-            if(mp.get(c)==1)return c;
-        }
+            if (andOfB == -1) {
+                andOfB = 0;
+            }
 
-        return '\0';
+            int m = totalXor ^ xorOfB;
+            int optimizationMask = ~m;
+            List<Integer> basis = new ArrayList<>();
+            for (int num : acNumbers) {
+                int maskedNum = num & optimizationMask;
+                for (int b : basis) {
+                    maskedNum = Math.min(maskedNum, maskedNum ^ b);
+                }
+                if (maskedNum > 0) {
+                    basis.add(maskedNum);
+                }
+            }
+            long maxAndTerm = 0;
+            for (int b : basis) {
+                maxAndTerm = Math.max(maxAndTerm, maxAndTerm ^ b);
+            }
+            maxGlobalScore = Math.max(maxGlobalScore, (long)andOfB + m + (2 * maxAndTerm));
+        }
+        return maxGlobalScore;
     }
 }
